@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website </title>
+    <link rel="stylesheet" href="style1.css">
+ </head>   
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+               <li><a href='#'> Home</a></li>
+               <li><a href='#'> About</a></li>
+               <li><a href='#'> Portfolio</a></li>
+               <li><a href='#'> Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text">
+            <h1> Hi, I'm <span>Yukti</span> <br> From India</h1>
+         </div>
+      </div>
+   </div>
+   <!---------about-------->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title"> About Me </h1>
+               <p> My name is Yukti Chaudhari. I am currently studying in D.Y. Patil College of Engineering Akurdi Pune. I am glad to have these opportunity as Frontend Developer in CodeAlpha 
+                  Company. I am a very good learner and hence I can give by best in every situation.
+                  Following are my Skills and Education:
+               </p>
+
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                  <p class="tab-links" onclick="opentab('education')"> Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>UI/UX</span><br>Designing Web</li>
+                     <li><span>Language Known</span><br>HTML, Python, Javascript</li>
+                     <li><span>Developing Style</span><br>Front End Developer</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>UI/UX</span><br>Designing Web</li>
+                     <li><span>Language Known</span><br>HTML, Python, Javascript</li>
+                     <li><span>Developing Style</span><br>Front End Developer</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2020</span><br>Complete 10th from Gondia scoring 98%</li>
+                     <li><span>2023</span><br>Complete 12th from Gondia scoring 75%</li>
+                     <li><span>Current Status</span><br>Studying in D.Y. Patil Akurdi Pune</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-----portfolio------->
+  <div id="portfolio">
+   <div class="container">
+      <h1 class="sub-title"> My Achievement</h1>
+      <div class="achievement-list">
+         <div claa="achievement">
+            <img src="images/sem1.png.jpeg">
+            <div class="layer">
+               <h3> Sem 1 Result</h3>
+               <p>In first year of engineering I scored 9.59 SGPA. This shows urge to learn new things.</p>
+            </div>
+         </div>
+         <div claa="achievement">
+            <img src="images/sem2.png.jpeg">
+            <div class="layer">
+               <h3> Sem 2 Result</h3>
+               <p>In second year of engineering I scored 9.68 SGPA. This shows the consistency of doing work.</p>
+            </div>
+         </div>
+         <div claa="achievement">
+            <img src="images/letter.png.jpeg">
+            <div class="layer">
+               <h3> Internship Letter</h3>
+               <p>In second year of engineering I received the offer letter from CodeAlpha Team.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
+   <!------contact------->
+  <div id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title"> Contact Me</h1>
+            <p> Email Id: yuktichaudhari18@gmail.com</p>
+            <p> Phone No: 7058373796</p>
+         </div>
+      </div>
+   </div>
+  </div>
+   
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+</body>
+</html
